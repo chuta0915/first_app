@@ -1,5 +1,4 @@
-== README
-# Ruby on Rails チュートリアル
+# Ruby on Rails Tutorial
 
 This is the app for the [*Ruby on Rails Tutorial*](http://railstutorial.jp/).
 
