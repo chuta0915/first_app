@@ -1,3 +1,4 @@
+# encoding: utf-8
 class SessionsController < ApplicationController
 
   # GET /signin <~ signin_path
@@ -12,10 +13,10 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       # サインイン後、ユーザページへリダイレクト
       sign_in user
-      redirect_to user
+      redirect_back_or user
     else
       # エラーメッセージを表示し、サインインフォームを再表示する
-      flash.now[:error] = 'Invalid email/password combination'
+      flash.now[:error] = 'E-mailとパスワードが間違っています'
       render 'new'
     end
   end

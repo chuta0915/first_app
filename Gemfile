@@ -7,6 +7,9 @@ gem 'rails', '4.0.5'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'faker', '1.1.2' # make sample users
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9' # for pagination
 
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -52,6 +55,9 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '0.3.20', require: false
 end
+
+# javascriptのi18n対応
+gem "i18n-js"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
