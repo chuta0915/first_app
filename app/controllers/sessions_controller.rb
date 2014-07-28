@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
       redirect_back_or user
     else
       # エラーメッセージを表示し、サインインフォームを再表示する
-      flash.now[:error] = 'E-mailとパスワードが間違っています'
+      flash.now[:error] = 'Invalid: E-mailとパスワードが間違っています'
       render 'new'
     end
   end
