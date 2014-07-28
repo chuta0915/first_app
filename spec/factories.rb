@@ -15,6 +15,11 @@ FactoryGirl.define do
     end
   end
 
+  factory :micropost do
+    content "Lorem ipsum"
+    user
+  end
+
   factory :user2, class: User do
     name     "Tom White"
     email    "tom@example.com"
