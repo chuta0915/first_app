@@ -1,7 +1,11 @@
 FirstApp::Application.routes.draw do
+  get "microposts/create"
+  get "microposts/destroy"
   # resources include GET PUT POST DELETE
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
+
   # get "static_pages/home"
   # get "static_pages/help"
   # get "static_pages/about"
